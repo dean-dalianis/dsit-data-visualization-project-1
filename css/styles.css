@@ -1,0 +1,45 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6b6b;
+}
+
+a:visited {
+    color: #8c8c8c;
+}
+
+a:focus {
+    outline: none;
+    color: #00b4d8;
+}
+
+body > *:not(header):not(footer) {
+    padding: 20px;
+}
+
+/* Credits page styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
