@@ -33,6 +33,10 @@ body > *:not(header):not(footer) {
     padding: 20px;
 }
 
+main {
+    margin-bottom: 80px;
+}
+
 /* Header styles */
 .navbar-brand-padded {
     padding-left: 10px;
