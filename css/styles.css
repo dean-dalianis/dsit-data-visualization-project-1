@@ -33,13 +33,36 @@ body > *:not(header):not(footer) {
     padding: 20px;
 }
 
-/* Credits page styles */
-ul {
-    list-style-type: none;
-    padding-left: 0;
+/* Header styles */
+.navbar-brand-padded {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-ul li {
-    padding: 5px 0;
+.menu-padded li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Carousel Styles */
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    filter: invert(100%);
+}
+
+.carousel-item img {
+    width: 75% !important;
+    margin: 0 auto;
+}
+
+/* Footer styles */
+.footer-icons a {
+    margin-right: 10px;
+}
+
+.back-to-top i {
+    font-size: 18px;
+    margin-left: 5px;
 }
 

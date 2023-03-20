@@ -2,62 +2,268 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Visualization</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Dean Dalianis</a>
+        <a class="navbar-brand navbar-brand-padded" href="index.html">Dean Dalianis</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-<li>                    <a class="nav-link" href="index.html">Home</a>
+            <ul class="navbar-nav menu-padded">
+                <li><a class="nav-link" href="index.html">Home</a>
                 </li>
-<li>                    <a class="nav-link active" href="visualization.html">Visualization</a>
+                <li><a class="nav-link active" href="visualization.html">Visualization</a>
                 </li>
-<li>                    <a class="nav-link" href="svg.html">SVG</a>
+                <li><a class="nav-link" href="svg.html">SVG</a>
                 </li>
-<li>                    <a class="nav-link" href="credits.html">Credits</a>
+                <li><a class="nav-link" href="credits.html">Credits</a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
 <main class="container py-5">
-    <div class="row">
+    <h2>Top 15 music genres in top 5 travel destinations</h2>
+    <h3>France</h3>
+    <div class="row p-2">
         <div class="col-md-6">
-
+            <div id="carouselFR" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselFR" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselFR" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/FR_pie_chart.svg" class="d-block w-100" alt="FR pie chart">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/FR_word_cloud.svg" class="d-block w-100" alt="FR word cloud">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFR" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFR" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
         <div class="col-md-6">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum fringilla enim. Quisque
+                tristique mauris ut blandit cursus. Duis tempor, tortor in tempus blandit, massa libero tincidunt justo,
+                id maximus elit mi ut urna. Sed velit dolor, bibendum eu mi eu, lacinia vestibulum tellus. Praesent sit
+                amet tellus malesuada, vulputate odio aliquet, tempus lacus. Aenean nec turpis ullamcorper, tempus metus
+                sed, tincidunt diam. Pellentesque molestie dolor ac elit eleifend molestie. Maecenas at nunc at elit
+                convallis dignissim id vitae ipsum. Nunc sed turpis non purus fermentum vulputate et ac urna. In
+                suscipit magna arcu, in feugiat dolor dignissim in. Morbi eu quam dui. Duis sit amet nisi auctor,
+                scelerisque justo et, iaculis eros. Nunc pretium risus at dolor pellentesque finibus. Quisque et est a
+                odio aliquet eleifend.
+            </p>
+        </div>
+    </div>
 
+    <h3>Spain</h3>
+    <div class="row p-2">
+        <div class="col-md-6">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum fringilla enim. Quisque
+                tristique mauris ut blandit cursus. Duis tempor, tortor in tempus blandit, massa libero tincidunt justo,
+                id maximus elit mi ut urna. Sed velit dolor, bibendum eu mi eu, lacinia vestibulum tellus. Praesent sit
+                amet tellus malesuada, vulputate odio aliquet, tempus lacus. Aenean nec turpis ullamcorper, tempus metus
+                sed, tincidunt diam. Pellentesque molestie dolor ac elit eleifend molestie. Maecenas at nunc at elit
+                convallis dignissim id vitae ipsum. Nunc sed turpis non purus fermentum vulputate et ac urna. In
+                suscipit magna arcu, in feugiat dolor dignissim in. Morbi eu quam dui. Duis sit amet nisi auctor,
+                scelerisque justo et, iaculis eros. Nunc pretium risus at dolor pellentesque finibus. Quisque et est a
+                odio aliquet eleifend.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div id="carouselES" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselES" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselES" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/FR_pie_chart.svg" class="d-block w-100" alt="FR pie chart">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/FR_word_cloud.svg" class="d-block w-100" alt="FR word cloud">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselES" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselES" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <h3>Italy</h3>
+    <div class="row p-2">
+        <div class="col-md-6">
+            <div id="carouselIT" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIT" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIT" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/FR_pie_chart.svg" class="d-block w-100" alt="FR pie chart">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/FR_word_cloud.svg" class="d-block w-100" alt="FR word cloud">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIT" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIT" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum fringilla enim. Quisque
+                tristique mauris ut blandit cursus. Duis tempor, tortor in tempus blandit, massa libero tincidunt justo,
+                id maximus elit mi ut urna. Sed velit dolor, bibendum eu mi eu, lacinia vestibulum tellus. Praesent sit
+                amet tellus malesuada, vulputate odio aliquet, tempus lacus. Aenean nec turpis ullamcorper, tempus metus
+                sed, tincidunt diam. Pellentesque molestie dolor ac elit eleifend molestie. Maecenas at nunc at elit
+                convallis dignissim id vitae ipsum. Nunc sed turpis non purus fermentum vulputate et ac urna. In
+                suscipit magna arcu, in feugiat dolor dignissim in. Morbi eu quam dui. Duis sit amet nisi auctor,
+                scelerisque justo et, iaculis eros. Nunc pretium risus at dolor pellentesque finibus. Quisque et est a
+                odio aliquet eleifend.
+            </p>
+        </div>
+    </div>
+    <h3>U.S.A.</h3>
+    <div class="row p-2">
+        <div class="col-md-6">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum fringilla enim. Quisque
+                tristique mauris ut blandit cursus. Duis tempor, tortor in tempus blandit, massa libero tincidunt justo,
+                id maximus elit mi ut urna. Sed velit dolor, bibendum eu mi eu, lacinia vestibulum tellus. Praesent sit
+                amet tellus malesuada, vulputate odio aliquet, tempus lacus. Aenean nec turpis ullamcorper, tempus metus
+                sed, tincidunt diam. Pellentesque molestie dolor ac elit eleifend molestie. Maecenas at nunc at elit
+                convallis dignissim id vitae ipsum. Nunc sed turpis non purus fermentum vulputate et ac urna. In
+                suscipit magna arcu, in feugiat dolor dignissim in. Morbi eu quam dui. Duis sit amet nisi auctor,
+                scelerisque justo et, iaculis eros. Nunc pretium risus at dolor pellentesque finibus. Quisque et est a
+                odio aliquet eleifend.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div id="carouselUS" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselUS" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselUS" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/FR_pie_chart.svg" class="d-block w-100" alt="FR pie chart">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/FR_word_cloud.svg" class="d-block w-100" alt="FR word cloud">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselUS" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselUS" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <h3>Japan</h3>
+    <div class="row p-2">
+        <div class="col-md-6">
+            <div id="carouselJP" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselJP" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselJP" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/FR_pie_chart.svg" class="d-block w-100" alt="FR pie chart">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/FR_word_cloud.svg" class="d-block w-100" alt="FR word cloud">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselJP" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselJP" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum fringilla enim. Quisque
+                tristique mauris ut blandit cursus. Duis tempor, tortor in tempus blandit, massa libero tincidunt justo,
+                id maximus elit mi ut urna. Sed velit dolor, bibendum eu mi eu, lacinia vestibulum tellus. Praesent sit
+                amet tellus malesuada, vulputate odio aliquet, tempus lacus. Aenean nec turpis ullamcorper, tempus metus
+                sed, tincidunt diam. Pellentesque molestie dolor ac elit eleifend molestie. Maecenas at nunc at elit
+                convallis dignissim id vitae ipsum. Nunc sed turpis non purus fermentum vulputate et ac urna. In
+                suscipit magna arcu, in feugiat dolor dignissim in. Morbi eu quam dui. Duis sit amet nisi auctor,
+                scelerisque justo et, iaculis eros. Nunc pretium risus at dolor pellentesque finibus. Quisque et est a
+                odio aliquet eleifend.
+            </p>
         </div>
     </div>
 </main>
-<footer class="bg-dark text-white py-3 fixed-bottom">
+<footer class="bg-dark text-white py-3 fixed-bottom p-5">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-4 text-md-left text-center">
                 <p>© 2022 Dean Dalianis</p>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center footer-icons">
                 <a href="https://www.linkedin.com/in/kdalianis/" target="_blank">
-                    <i class="fab fa-linkedin fa-lg mr-3"></i>
+                    <i class="fab fa-linkedin fa-lg"></i>
                 </a>
                 <a href="https://www.facebook.com/dean.is.taken" target="_blank">
-                    <i class="fab fa-facebook fa-lg mr-3"></i>
+                    <i class="fab fa-facebook fa-lg"></i>
                 </a>
                 <a href="https://instagram.com/deandalianis/" target="_blank">
-                    <i class="fab fa-instagram fa-lg mr-3"></i>
+                    <i class="fab fa-instagram fa-lg"></i>
                 </a>
                 <a href="https://linktr.ee/whatblackarts" target="_blank">
-                    <i class="fas fa-music fa-lg mr-3"></i>
+                    <i class="fas fa-music fa-lg"></i>
                 </a>
                 <a href="mailto:deandalianis@gmail.com">
                     <i class="fas fa-envelope fa-lg"></i>
@@ -65,14 +271,15 @@
             </div>
             <div class="col-md-4 text-md-right text-center">
                 <a href="#" class="btn btn-outline-light back-to-top">
-                    <i class="fas fa-chevron-up mr-2"></i>Back to top
+                    <span class="mr-2">Back to top</span>
+                    <i class="fas fa-chevron-up"></i>
                 </a>
             </div>
         </div>
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
