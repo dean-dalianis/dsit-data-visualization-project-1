@@ -21,7 +21,7 @@
             <ul class="navbar-nav menu-padded">
                 <li><a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li><a class="nav-link" href="visualization.html">Visualization</a>
+                <li><a class="nav-link" href="music-genres-per-country.html">Music genres per country</a>
                 </li>
                 <li><a class="nav-link active" href="whack-a-shape.html">Whack a shape</a>
                 </li>
@@ -31,21 +31,19 @@
         </div>
     </nav>
 </header>
-<main>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Whack-a-Shape!</h2>
-                <h3>Score: <span id="score">0</span></h3>
-                <h3>Time remaining: <span id="time-remaining">30</span> seconds</h3>
-                <button id="start-button" class="btn btn-primary">Start Game</button>
+<main class="container py-5">
+    <h2>Whack-a-Shape!</h2>
+    <div class="row p-1 pt-3">
+        <div class="col-md-12">
+            <div class="game-board">
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-sm-12">
-                <div class="game-board">
-                </div>
-            </div>
+    </div>
+    <div class="row p-1 pt-3">
+        <div class="col-md-12">
+            <h3>Score: <span id="score">0</span></h3>
+            <h3>Time remaining: <span id="time-remaining">30</span> seconds</h3>
+            <button id="start-button" class="btn btn-primary">Start Game</button>
         </div>
     </div>
 </main>

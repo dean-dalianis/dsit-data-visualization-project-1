@@ -11,7 +11,6 @@ AUTH_TOKEN = 'BQAeDYWiKwHJMpOBXFPZtzVBMNoWfTmgh04RK3W-BzApcYP1-fdOhwP8Lv--N9e7g3
 
 spotify = spotipy.Spotify(auth=AUTH_TOKEN, requests_timeout=10, retries=3)
 
-
 def generate_charts(destination):
     genres = []
     for playlist in spotify.category_playlists("toplists", country=destination)['playlists']['items']:
