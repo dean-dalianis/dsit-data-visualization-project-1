@@ -43,7 +43,6 @@ body > *:not(header):not(footer) {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 /* Carousel Styles */
 .carousel-control-next,
 .carousel-control-prev,

@@ -1,0 +1,31 @@
+.game-board {
+    width: 100%;
+    height: 400px;
+    background-color: #eee;
+    position: relative;
+}
+
+.game-shape {
+    position: absolute;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #008080;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #FF1493;
+}
