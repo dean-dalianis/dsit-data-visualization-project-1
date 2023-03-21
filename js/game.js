@@ -4,12 +4,19 @@ $(document).ready(function () {
     let gameTimer;
     let shapeInterval;
 
-    // Start the game when the "Start Game" button is clicked
     $('#start-button').click(function () {
+        if (gameTimer) {
+            clearInterval(gameTimer);
+            gameTimer = null;
+        }
+        if (shapeInterval) {
+            clearInterval(shapeInterval);
+            shapeInterval = null;
+        }
+        $('.game-shape').remove();
         startGame();
     });
 
-    // Start the game
     function startGame() {
         timeRemaining = 30;
         score = 0;
@@ -22,12 +29,13 @@ $(document).ready(function () {
             $('#time-remaining').text(timeRemaining);
             if (timeRemaining === 0) {
                 clearInterval(gameTimer);
+                gameTimer = null;
                 clearInterval(shapeInterval);
+                shapeInterval = null;
                 $('.game-shape').remove();
             }
         }, 1000);
 
-        // Create the game shapes
         shapeInterval = setInterval(function () {
             const shapeTypes = ['circle', 'square', 'triangle'];
             const shapeType = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
@@ -44,14 +52,12 @@ $(document).ready(function () {
             const shape = $('<div class="game-shape ' + shapeType + '" style="top: ' + top + 'px; left: ' + left + 'px; background-color: ' + shapeColor + '; width: ' + shapeSize + 'px; height: ' + shapeSize + 'px; animation-duration: ' + shapeDuration + 'ms;"></div>');
             $('.game-board').append(shape);
 
-            // Remove the shape when clicked and increment the score
             shape.click(function () {
                 $(this).remove();
                 score++;
                 $('#score').text(score);
             });
 
-            // Remove the shape after a random duration
             setTimeout(function () {
                 shape.remove();
             }, shapeDuration);
