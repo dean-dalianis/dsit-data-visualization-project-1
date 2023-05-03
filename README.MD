@@ -1,4 +1,4 @@
-# M126_Assignment_1
+# M126: Assignment 1 & 3
 
 This is a basic website built using HTML5, CSS, SVG, Javascript, and jQuery for the *M126 Data Viz* course taught by
 Professor Maria Roussou as part of the *Data Science and Information Technologies* M.Sc. in Department of Informatics
@@ -12,4 +12,5 @@ The three pages of the website are:
 - **music-genres-per-country.html**: Includes a data-driven visualization images generated using *
   *topMusicGenresInTopTravelDestinations.py**.
 - **whack-a-shape.html**: Includes a small game built using SVGs and jQuery.
+- **superpowers-review.html**: Includes thoughts for the paper Superpowers as Inspiration for Visualization.
 - **credits.html**: Includes credit to all the sources used to build the website, including licenses.
