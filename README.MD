@@ -1,8 +1,17 @@
-# M126: Assignment 1 & 3
+# DSIT Data Visualization Project 1
 
-This is a basic website built using HTML5, CSS, SVG, Javascript, and jQuery for the *M126 Data Viz* course taught by
-Professor Maria Roussou as part of the *Data Science and Information Technologies* M.Sc. in Department of Informatics
-and Telecommunications at University of Athens.
+This is a basic website built using HTML5, CSS, SVG, Javascript, and jQuery for the *M126 Data Visualization* course
+taught by Professor Maria Roussou as part of the *Data Science and Information Technologies* M.Sc. in Department of
+Informatics and Telecommunications at University of Athens.
+
+## Top Music Genres in Top Travel Destinations
+
+As part of the project, I wrote a
+simple [Python Spotify Analysis Script](python/topMusicGenresInTopTravelDestinations.py) which generates charts and word
+clouds based on Spotify playlists for selected destinations. The code utilizes the Spotipy library to retrieve playlists
+from the *"toplists"* category for each destination country. It then extracts the genres associated with the tracks in
+these playlists and creates visual representations of the most common genres. The resulting charts, including pie charts
+and word clouds, are saved as SVG files for each destination.
 
 ## Pages
 
